@@ -43,7 +43,7 @@ class Email(object):
 
         server = smtplib.SMTP('smtp.gmail.com', port=587)
         server.starttls()
-        server.login(fromaddr, "Teamenigma@1507")
+        server.login(fromaddr, "YourPassword")
 
         text = msg.as_string()
         server.sendmail(fromaddr, toaddr, text)
